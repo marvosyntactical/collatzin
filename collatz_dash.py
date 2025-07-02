@@ -172,22 +172,11 @@ def update_shrub(_, left_deg, right_deg, z_step, n_starts, max_start, scheme):
     fig = go.Figure()
     for s in starts:
         xs, ys, zs = collatz_path_3d(s, left_deg, right_deg, z_step, scheme)
-        # fig.add_trace(go.Scatter3d(x=xs, y=ys, z=zs,
-        #                            mode='lines',
-        stride = 10                      # draw every 10th label → tweak to taste
-        labels = [f"n={v}" if (i % stride == 0 or i == len(vals)-1) else ""
-          for i, v in enumerate(vals)]
-
-        fig.add_trace(go.Scatter3d(
-            x=xs, y=ys, z=zs,
-            mode='lines+text',           # show the numbers, too
-            text=labels,
-            textposition="top center",
-            textfont=dict(size=8, color=colour),
-            line=dict(width=1, color=colour_for(s, max_start)),
-            opacity=0.3,
-            hoverinfo='skip')
-        )
+        fig.add_trace(go.Scatter3d(x=xs, y=ys, z=zs,
+                                   mode='lines',
+                                   line=dict(width=1, color=colour_for(s, max_start)),
+                                   opacity=0.3,
+                                   hoverinfo='skip'))
 
     # Highlight the record trajectory for reference
     hero = 837_799 if scheme == 'binary' else 91
@@ -195,7 +184,7 @@ def update_shrub(_, left_deg, right_deg, z_step, n_starts, max_start, scheme):
         xs, ys, zs = collatz_path_3d(hero, left_deg, right_deg, z_step, scheme)
         fig.add_trace(go.Scatter3d(x=xs, y=ys, z=zs,
                                    mode='lines',
-                                   line=dict(width=4, color='black'),
+                                   line=dict(width=1.8, color='black'),
                                    name=f'Hero {hero}'))
     fig.update_layout(showlegend=False,
                       scene=dict(xaxis=dict(visible=False),
