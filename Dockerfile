@@ -7,7 +7,9 @@ RUN pip install --no-cache-dir -r requirements.txt   # make sure gunicorn is lis
 COPY . .
 
 # Fly’s proxy will hit whatever $PORT it injects (usually 8080)
+ENV PORT=8080
 EXPOSE 8080
 
 # ▶️ CRUCIAL ◀️  include the COLON
-CMD gunicorn collatz_dash:server -b :$PORT --workers 3 --timeout 120
+# CMD gunicorn collatz_dash:server -b :$PORT --workers 3 --timeout 120
+CMD ["python3", "collatz_dash.py"]
