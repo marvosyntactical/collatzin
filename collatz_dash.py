@@ -25,7 +25,7 @@ Deployment on Fly.io
 
 Local run for dev
 -----------------
-    $ python collatz_dash.py  # opens http://127.0.0.1:8050
+    $ python collatz_dash.py  # opens http://127.0.0.1:8051
 
 """
 from __future__ import annotations
@@ -223,7 +223,7 @@ if __name__ == "__main__":
 
     # app.run_server(debug=True)
     import os
-    port = int(os.environ.get("PORT", 8050))
+    port = int(os.environ.get("PORT", 8051))
     app.run(host="0.0.0.0", port=port, debug=False)
 
 
