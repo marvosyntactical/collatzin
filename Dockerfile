@@ -8,7 +8,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY network.py .
+COPY collatz_dash.py .
 
 # Fly’s routing layer looks at PORT
 ENV PORT=8051
