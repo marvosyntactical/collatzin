@@ -208,6 +208,9 @@ For a chosen start $n_0$, we iterate $n_{k+1}=C(n_k)$ until reaching $1$.
 * **Vertical axis** — climbs a constant $\Delta z$ each iteration, so overall
   height encodes the *stopping time*.
 
+We sample the given number of starting numbers from the range given by max starting number.
+Sampling is without replacement, so if you just want to see the trajectories of e.g. the numbers 1 to 100, set both fields to 100.
+Colour indicates bigliness of initial number of that trajectory.
 """
 
     return fig, md
