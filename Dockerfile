@@ -11,7 +11,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY collatz_dash.py .
 
 # Fly’s routing layer looks at PORT
-ENV PORT=8050
-EXPOSE 8050
+ENV PORT=8080
+EXPOSE 8080
 
 CMD ["python", "collatz_dash.py"]
