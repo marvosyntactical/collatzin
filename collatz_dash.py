@@ -172,11 +172,22 @@ def update_shrub(_, left_deg, right_deg, z_step, n_starts, max_start, scheme):
     fig = go.Figure()
     for s in starts:
         xs, ys, zs = collatz_path_3d(s, left_deg, right_deg, z_step, scheme)
-        fig.add_trace(go.Scatter3d(x=xs, y=ys, z=zs,
-                                   mode='lines',
-                                   line=dict(width=1, color=colour_for(s, max_start)),
-                                   opacity=0.3,
-                                   hoverinfo='skip'))
+        # fig.add_trace(go.Scatter3d(x=xs, y=ys, z=zs,
+        #                            mode='lines',
+        stride = 10                      # draw every 10th label → tweak to taste
+        labels = [f"n={v}" if (i % stride == 0 or i == len(vals)-1) else ""
+          for i, v in enumerate(vals)]
+
+        fig.add_trace(go.Scatter3d(
+            x=xs, y=ys, z=zs,
+            mode='lines+text',           # show the numbers, too
+            text=labels,
+            textposition="top center",
+            textfont=dict(size=8, color=colour),
+            line=dict(width=1, color=colour_for(s, max_start)),
+            opacity=0.3,
+            hoverinfo='skip')
+        )
 
     # Highlight the record trajectory for reference
     hero = 837_799 if scheme == 'binary' else 91
@@ -208,8 +219,6 @@ For a chosen start $n_0$, we iterate $n_{k+1}=C(n_k)$ until reaching $1$.
 * **Vertical axis** — climbs a constant $\Delta z$ each iteration, so overall
   height encodes the *stopping time*.
 
-Feel free to edit this markdown to add proofs, conjectures, or hot takes on
-why this stubborn conjecture still stands.
 """
 
     return fig, md
