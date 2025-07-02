@@ -1,0 +1,100 @@
+[2m2025-07-02T19:08:53Z[0m runner[286ee3df620238] [32mfra[0m [[34minfo[0m]Machine created and started in 5.672s
+[2m2025-07-02T19:08:53Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m]2025/07/02 19:08:53 INFO SSH listening listen_address=[fdaa:1e:d3fb:a7b:3fb:8fa7:c87e:2]:22
+[2m2025-07-02T19:08:54Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m]Dash is running on http://0.0.0.0:8080/
+[2m2025-07-02T19:08:54Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m] * Serving Flask app 'collatz_dash'
+[2m2025-07-02T19:08:54Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m] * Debug mode: off
+[2m2025-07-02T19:08:54Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m][31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+[2m2025-07-02T19:08:54Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m] * Running on all addresses (0.0.0.0)
+[2m2025-07-02T19:08:54Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m] * Running on http://127.0.0.1:8080
+[2m2025-07-02T19:08:54Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m] * Running on http://172.19.16.146:8080
+[2m2025-07-02T19:08:54Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m][33mPress CTRL+C to quit[0m
+[2m2025-07-02T19:09:05Z[0m runner[148e30d1a09e28] [32mfra[0m [[34minfo[0m]Pulling container image registry.fly.io/collatzin@sha256:059c02de6694fd16c2e01c4be536c3b124fd1f6e89b278e0971387181db7f726
+[2m2025-07-02T19:09:06Z[0m runner[148e30d1a09e28] [32mfra[0m [[34minfo[0m]Successfully prepared image registry.fly.io/collatzin@sha256:059c02de6694fd16c2e01c4be536c3b124fd1f6e89b278e0971387181db7f726 (459.889229ms)
+[2m2025-07-02T19:09:06Z[0m runner[148e30d1a09e28] [32mfra[0m [[34minfo[0m]Configuring firecracker
+[2m2025-07-02T19:09:06Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m][32m INFO[0m Sending signal SIGINT to main child process w/ PID 628
+[2m2025-07-02T19:09:06Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m][32m INFO[0m Main child exited normally with code: 0
+[2m2025-07-02T19:09:06Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m][32m INFO[0m Starting clean up.
+[2m2025-07-02T19:09:06Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m][33m WARN[0m could not unmount /rootfs: EINVAL: Invalid argument
+[2m2025-07-02T19:09:06Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m][  309.064755] reboot: Restarting system
+[2m2025-07-02T19:09:06Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m]2025-07-02T19:09:06.932695734 [01JZ68NTKQ55Q24Y29CWKCNE51:main] Running Firecracker v1.7.0
+[2m2025-07-02T19:09:07Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m][32m INFO[0m Starting init (commit: d0572327e)...
+[2m2025-07-02T19:09:07Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m][32m INFO[0m Preparing to run: `python collatz_dash.py` as root
+[2m2025-07-02T19:09:07Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m][32m INFO[0m [fly api proxy] listening at /.fly/api
+[2m2025-07-02T19:09:07Z[0m runner[148e30d1a09e28] [32mfra[0m [[34minfo[0m]Machine created and started in 2.185s
+[2m2025-07-02T19:09:08Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m]2025/07/02 19:09:08 INFO SSH listening listen_address=[fdaa:1e:d3fb:a7b:447:356a:a77b:2]:22
+[2m2025-07-02T19:09:08Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m]Dash is running on http://0.0.0.0:8080/
+[2m2025-07-02T19:09:08Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m] * Serving Flask app 'collatz_dash'
+[2m2025-07-02T19:09:08Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m] * Debug mode: off
+[2m2025-07-02T19:09:08Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m][31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+[2m2025-07-02T19:09:08Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m] * Running on all addresses (0.0.0.0)
+[2m2025-07-02T19:09:08Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m] * Running on http://127.0.0.1:8080
+[2m2025-07-02T19:09:08Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m] * Running on http://172.19.10.250:8080
+[2m2025-07-02T19:09:08Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m][33mPress CTRL+C to quit[0m
+[2m2025-07-02T19:11:51Z[0m runner[286ee3df620238] [32mfra[0m [[34minfo[0m]Pulling container image registry.fly.io/collatzin@sha256:059c02de6694fd16c2e01c4be536c3b124fd1f6e89b278e0971387181db7f726
+[2m2025-07-02T19:11:51Z[0m runner[286ee3df620238] [32mfra[0m [[34minfo[0m]Container image registry.fly.io/collatzin@sha256:059c02de6694fd16c2e01c4be536c3b124fd1f6e89b278e0971387181db7f726 already prepared
+[2m2025-07-02T19:11:52Z[0m runner[286ee3df620238] [32mfra[0m [[34minfo[0m]Configuring firecracker
+[2m2025-07-02T19:11:52Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m][32m INFO[0m Sending signal SIGINT to main child process w/ PID 628
+[2m2025-07-02T19:11:53Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m][32m INFO[0m Main child exited normally with code: 0
+[2m2025-07-02T19:11:53Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m][32m INFO[0m Starting clean up.
+[2m2025-07-02T19:11:53Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m][33m WARN[0m could not unmount /rootfs: EINVAL: Invalid argument
+[2m2025-07-02T19:11:53Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m][  181.099718] reboot: Restarting system
+[2m2025-07-02T19:11:55Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m]2025-07-02T19:11:55.300175792 [01JZ68TVYWRVHS83G83D1FSMX5:main] Running Firecracker v1.7.0
+[2m2025-07-02T19:11:56Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m][32m INFO[0m Starting init (commit: d0572327e)...
+[2m2025-07-02T19:11:56Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m][32m INFO[0m Preparing to run: `python collatz_dash.py` as root
+[2m2025-07-02T19:11:56Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m][32m INFO[0m [fly api proxy] listening at /.fly/api
+[2m2025-07-02T19:11:56Z[0m runner[286ee3df620238] [32mfra[0m [[34minfo[0m]Machine created and started in 5.163s
+[2m2025-07-02T19:11:56Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m]2025/07/02 19:11:56 INFO SSH listening listen_address=[fdaa:1e:d3fb:a7b:3fb:8fa7:c87e:2]:22
+[2m2025-07-02T19:11:57Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m]Dash is running on http://0.0.0.0:8080/
+[2m2025-07-02T19:11:57Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m] * Serving Flask app 'collatz_dash'
+[2m2025-07-02T19:11:57Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m] * Debug mode: off
+[2m2025-07-02T19:11:57Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m][31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+[2m2025-07-02T19:11:57Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m] * Running on all addresses (0.0.0.0)
+[2m2025-07-02T19:11:57Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m] * Running on http://127.0.0.1:8080
+[2m2025-07-02T19:11:57Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m] * Running on http://172.19.16.146:8080
+[2m2025-07-02T19:11:57Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m][33mPress CTRL+C to quit[0m
+[2m2025-07-02T19:12:10Z[0m runner[148e30d1a09e28] [32mfra[0m [[34minfo[0m]Pulling container image registry.fly.io/collatzin@sha256:059c02de6694fd16c2e01c4be536c3b124fd1f6e89b278e0971387181db7f726
+[2m2025-07-02T19:12:10Z[0m runner[148e30d1a09e28] [32mfra[0m [[34minfo[0m]Container image registry.fly.io/collatzin@sha256:059c02de6694fd16c2e01c4be536c3b124fd1f6e89b278e0971387181db7f726 already prepared
+[2m2025-07-02T19:12:10Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m][32m INFO[0m Sending signal SIGINT to main child process w/ PID 628
+[2m2025-07-02T19:12:10Z[0m runner[148e30d1a09e28] [32mfra[0m [[34minfo[0m]Configuring firecracker
+[2m2025-07-02T19:12:10Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m][32m INFO[0m Main child exited normally with code: 0
+[2m2025-07-02T19:12:10Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m][32m INFO[0m Starting clean up.
+[2m2025-07-02T19:12:10Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m][33m WARN[0m could not unmount /rootfs: EINVAL: Invalid argument
+[2m2025-07-02T19:12:10Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m][  183.916717] reboot: Restarting system
+[2m2025-07-02T19:12:11Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m]2025-07-02T19:12:11.254751370 [01JZ68VF7PQSHTA0NX7SQNA8ZM:main] Running Firecracker v1.7.0
+[2m2025-07-02T19:12:11Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m][32m INFO[0m Starting init (commit: d0572327e)...
+[2m2025-07-02T19:12:12Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m][32m INFO[0m Preparing to run: `python collatz_dash.py` as root
+[2m2025-07-02T19:12:12Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m][32m INFO[0m [fly api proxy] listening at /.fly/api
+[2m2025-07-02T19:12:12Z[0m runner[148e30d1a09e28] [32mfra[0m [[34minfo[0m]Machine created and started in 1.543s
+[2m2025-07-02T19:12:12Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m]2025/07/02 19:12:12 INFO SSH listening listen_address=[fdaa:1e:d3fb:a7b:447:356a:a77b:2]:22
+[2m2025-07-02T19:12:13Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m]Dash is running on http://0.0.0.0:8080/
+[2m2025-07-02T19:12:13Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m] * Serving Flask app 'collatz_dash'
+[2m2025-07-02T19:12:13Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m] * Debug mode: off
+[2m2025-07-02T19:12:13Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m][31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+[2m2025-07-02T19:12:13Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m] * Running on all addresses (0.0.0.0)
+[2m2025-07-02T19:12:13Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m] * Running on http://127.0.0.1:8080
+[2m2025-07-02T19:12:13Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m] * Running on http://172.19.10.250:8080
+[2m2025-07-02T19:12:13Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m][33mPress CTRL+C to quit[0m
+[2m2025-07-02T19:17:23Z[0m proxy[148e30d1a09e28] [32mfra[0m [[34minfo[0m]App collatzin has excess capacity, autostopping machine 148e30d1a09e28. 1 out of 2 machines left running (region=fra, process group=app)
+[2m2025-07-02T19:17:23Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m][32m INFO[0m Sending signal SIGINT to main child process w/ PID 629
+[2m2025-07-02T19:17:24Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m][32m INFO[0m Main child exited normally with code: 0
+[2m2025-07-02T19:17:24Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m][32m INFO[0m Starting clean up.
+[2m2025-07-02T19:17:24Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m][33m WARN[0m could not unmount /rootfs: EINVAL: Invalid argument
+[2m2025-07-02T19:17:24Z[0m app[148e30d1a09e28] [32mfra[0m [[34minfo[0m][  313.079932] reboot: Restarting system
+[2m2025-07-02T19:18:00Z[0m proxy[286ee3df620238] [32mfra[0m [[34minfo[0m]App collatzin has excess capacity, autostopping machine 286ee3df620238. 0 out of 1 machines left running (region=fra, process group=app)
+[2m2025-07-02T19:18:00Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m][32m INFO[0m Sending signal SIGINT to main child process w/ PID 631
+[2m2025-07-02T19:18:00Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m][32m INFO[0m Main child exited normally with code: 0
+[2m2025-07-02T19:18:00Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m][32m INFO[0m Starting clean up.
+[2m2025-07-02T19:18:00Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m][33m WARN[0m could not unmount /rootfs: EINVAL: Invalid argument
+[2m2025-07-02T19:18:00Z[0m app[286ee3df620238] [32mfra[0m [[34minfo[0m][  365.336843] reboot: Restarting system
+[2m2025-07-02T19:25:17Z[0m runner[148e30d1a09e28] [32mfra[0m [[34minfo[0m]Pulling container image registry.fly.io/collatzin@sha256:61986f995d67b2c39ad1b3f7a7ca0e94092dbd6171e4646693021576eaee7a39
+[2m2025-07-02T19:25:17Z[0m runner[286ee3df620238] [32mfra[0m [[34minfo[0m]Pulling container image registry.fly.io/collatzin@sha256:61986f995d67b2c39ad1b3f7a7ca0e94092dbd6171e4646693021576eaee7a39
+[2m2025-07-02T19:25:21Z[0m runner[148e30d1a09e28] [32mfra[0m [[34minfo[0m]Successfully prepared image registry.fly.io/collatzin@sha256:61986f995d67b2c39ad1b3f7a7ca0e94092dbd6171e4646693021576eaee7a39 (4.02892631s)
+[2m2025-07-02T19:25:21Z[0m runner[148e30d1a09e28] [32mfra[0m [[34minfo[0m]Configuring firecracker
+[2m2025-07-02T19:25:24Z[0m runner[286ee3df620238] [32mfra[0m [[34minfo[0m]Successfully prepared image registry.fly.io/collatzin@sha256:61986f995d67b2c39ad1b3f7a7ca0e94092dbd6171e4646693021576eaee7a39 (6.146059991s)
+[2m2025-07-02T19:25:25Z[0m runner[286ee3df620238] [32mfra[0m [[34minfo[0m]Configuring firecracker
+[2m2025-07-02T19:29:58Z[0m runner[148e30d1a09e28] [32mfra[0m [[34minfo[0m]Pulling container image registry.fly.io/collatzin@sha256:00675f9721b43978d6bae6e3ebcf3940444def367bfc9e49c8a166a09cf9656d
+[2m2025-07-02T19:29:59Z[0m runner[286ee3df620238] [32mfra[0m [[34minfo[0m]Pulling container image registry.fly.io/collatzin@sha256:00675f9721b43978d6bae6e3ebcf3940444def367bfc9e49c8a166a09cf9656d
+[2m2025-07-02T19:30:00Z[0m runner[148e30d1a09e28] [32mfra[0m [[34minfo[0m]Successfully prepared image registry.fly.io/collatzin@sha256:00675f9721b43978d6bae6e3ebcf3940444def367bfc9e49c8a166a09cf9656d (2.250273339s)
+[2m2025-07-02T19:30:00Z[0m runner[148e30d1a09e28] [32mfra[0m [[34minfo[0m]Configuring firecracker
+[2m2025-07-02T19:30:03Z[0m runner[286ee3df620238] [32mfra[0m [[34minfo[0m]Successfully prepared image registry.fly.io/collatzin@sha256:00675f9721b43978d6bae6e3ebcf3940444def367bfc9e49c8a166a09cf9656d (4.305821935s)
+[2m2025-07-02T19:30:06Z[0m runner[286ee3df620238] [32mfra[0m [[34minfo[0m]Configuring firecracker
